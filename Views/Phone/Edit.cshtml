@@ -1,0 +1,15 @@
+@model INT422A1.Models.Phone;
+
+@{
+    ViewBag.Title = "Edit - " + @Model.PhoneName;
+}
+
+<h1>Edit - @Model.PhoneName</h1>
+<hr>
+
+@using (Html.BeginForm("Edit", "Phone", FormMethod.Post, new { @class = "phone-form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Phone Information:</h4>
+    @Html.TextBoxFor(phone => phone.PhoneName, new { @class = "input-field" })
+}

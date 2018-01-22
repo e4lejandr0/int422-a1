@@ -1,0 +1,22 @@
+@model IEnumerable<INT422A1.Models.Phone>
+@{
+    ViewData["title"] = "Index";
+}
+<table class="phone-table">
+    <thead>
+        <tr>
+            <th>Phone Name</th>
+            <th>Manufacturer</th>
+            <th>MSRP</th>
+            <th>Release Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Phone phone in Model) {
+            @
+        }
+
+    </tbody>
+</table>
+                
+        

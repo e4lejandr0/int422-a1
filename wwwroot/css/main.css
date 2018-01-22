@@ -1,0 +1,62 @@
+html, body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: rgb(69, 3, 92);
+}
+
+div.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 80vw;
+    margin: auto;
+    background-color: ghostwhite;
+}
+
+div.body {
+    flex: 1 auto;
+}
+
+div.title {
+    padding: 2em;
+    flex: 0.05 auto;
+}
+
+footer {
+    flex: 0.1 auto;
+}
+
+div.content hr {
+    width: 80%;
+    margin: auto;
+}
+
+table.phone-table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+table.phone-table th {
+    padding: 0.5em;
+    font-size: 1em;
+    border-bottom: 1px solid black;
+}
+table.phone-table td {
+    padding: 0.25em;
+}
+table.phone-table tbody tr:nth-child(odd) {
+    background-color: rgb(216, 110, 264);
+}
+
+table.phone-table tbody tr:nth-child(even) {
+    background-color: rgb(143, 73, 135);
+}

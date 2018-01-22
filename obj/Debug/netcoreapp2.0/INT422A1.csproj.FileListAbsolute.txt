@@ -1,0 +1,10 @@
+/data/Playground/DotNet/INT422A1/bin/Debug/netcoreapp2.0/INT422A1.deps.json
+/data/Playground/DotNet/INT422A1/bin/Debug/netcoreapp2.0/INT422A1.runtimeconfig.json
+/data/Playground/DotNet/INT422A1/bin/Debug/netcoreapp2.0/INT422A1.runtimeconfig.dev.json
+/data/Playground/DotNet/INT422A1/bin/Debug/netcoreapp2.0/INT422A1.dll
+/data/Playground/DotNet/INT422A1/bin/Debug/netcoreapp2.0/INT422A1.pdb
+/data/Playground/DotNet/INT422A1/obj/Debug/netcoreapp2.0/INT422A1.csproj.CoreCompileInputs.cache
+/data/Playground/DotNet/INT422A1/obj/Debug/netcoreapp2.0/INT422A1.AssemblyInfoInputs.cache
+/data/Playground/DotNet/INT422A1/obj/Debug/netcoreapp2.0/INT422A1.AssemblyInfo.cs
+/data/Playground/DotNet/INT422A1/obj/Debug/netcoreapp2.0/INT422A1.dll
+/data/Playground/DotNet/INT422A1/obj/Debug/netcoreapp2.0/INT422A1.pdb
