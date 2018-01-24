@@ -24,6 +24,15 @@ namespace INT422A1.Controllers
             return View();
         }
 
+        [HttpPost("/phones/create")]
+        public IActionResult New([Bind("PhoneName,Manufacturer,MSRP,DateReleased,ScreenSize")] Phone newPhone)
+        {
+            newPhone.Id = Guid.NewGuid();
+            db.Add(newPhone);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         [Route("/phones/{id}/edit")]
         public IActionResult Edit(Guid Id)
         {
@@ -38,13 +47,20 @@ namespace INT422A1.Controllers
         [HttpPatch("/phones/{id}/edit")]
         public IActionResult Update(Guid Id)
         {
-            return View();
+            Phone toUpdate = db.Phones.Where(p => p.Id == Id).FirstOrDefault();
+            Console.WriteLine("Phone id: {0}", toUpdate.Id);
+
+            //Phone oldPhone = db.Phones.Where(p => p.Id == Id).FirstOrDefault();
+            //db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         [HttpDelete("/phones/{id}")]
-        public IActionResult Delete(Guid id)
+        public IActionResult Delete([Bind("Id")] Phone deletedPhone)
         {
-            return View();
+            db.Phones.Remove(deletedPhone);
+            db.SaveChanges(); 
+            return RedirectToAction("Index");
         }
 
         public IActionResult Error()

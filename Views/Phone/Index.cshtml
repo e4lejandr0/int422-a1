@@ -7,13 +7,22 @@
         <tr>
             <th>Phone Name</th>
             <th>Manufacturer</th>
-            <th>MSRP</th>
+            <th style="text-align: right">MSRP</th>
             <th>Release Date</th>
+            <th>Screen Size</th>
+            <th style="text-align: center;"><a class="action-link" href="/phones/create">+</a></th>
         </tr>
     </thead>
     <tbody>
         @foreach(Phone phone in Model) {
-            @
+            <tr>
+                <td>@Html.DisplayFor(modelItem => phone.PhoneName)</td>
+                <td>@Html.DisplayFor(modelItem => phone.Manufacturer)</td>
+                <td style="text-align: right;">@Html.DisplayFor(modelItem => phone.MSRP)</td>
+                <td>@Html.DisplayFor(modelItem => phone.DateReleased)</td>
+                <td>@Html.DisplayFor(modelItem => phone.ScreenSize)</td>
+                <td style="text-align: center;"><a class="action-link" href="/phones/@phone.Id/edit">Edit</a> | <a class="action-link" href="/phones/@phone.Id/delete">Delete</a></td>
+            </tr>
         }
 
     </tbody>

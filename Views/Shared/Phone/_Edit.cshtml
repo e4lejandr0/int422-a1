@@ -1,0 +1,19 @@
+@model INT422A1.Models.Phone
+
+@using (Html.BeginForm("Edit", "Phone", FormMethod.Post, new { @class = "phone-form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="field-group">
+        @Html.LabelFor(phone => phone.PhoneName, new { @class = "form-label" })
+        @Html.TextBoxFor(phone => phone.PhoneName, new { @class = "input-field" })
+        @Html.LabelFor(phone => phone.Manufacturer, new { @class = "form-label" })
+        @Html.TextBoxFor(phone => phone.Manufacturer, new { @class = "input-field" })
+        @Html.LabelFor(phone => phone.MSRP, new { @class = "form-label" })
+        @Html.TextBoxFor(phone => phone.MSRP, new { @class = "input-field" })
+        @Html.LabelFor(phone => phone.DateReleased, new { @class = "form-label" })
+        @Html.TextBoxFor(phone => phone.DateReleased, new { @class = "input-field" })
+        @Html.LabelFor(phone => phone.ScreenSize, new { @class = "form-label" })
+        @Html.TextBoxFor(phone => phone.ScreenSize, new { @class = "input-field" })
+        <input type="submit" value="Submit" >
+    </div>
+}

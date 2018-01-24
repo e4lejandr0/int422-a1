@@ -41,6 +41,7 @@ div.content hr {
 }
 
 table.phone-table {
+    text-align: left; 
     margin: auto;
     width: 80%;
     border-collapse: collapse;
@@ -51,12 +52,34 @@ table.phone-table th {
     border-bottom: 1px solid black;
 }
 table.phone-table td {
-    padding: 0.25em;
+    padding: 0.25em 0.5em;
 }
 table.phone-table tbody tr:nth-child(odd) {
-    background-color: rgb(216, 110, 264);
+    background-color: rgba(216, 110, 264, 0.2);
 }
 
 table.phone-table tbody tr:nth-child(even) {
-    background-color: rgb(143, 73, 135);
+    background-color: rgba(143, 73, 135, 0.2);
+}
+a.action-link {
+    border-radius: 5px;
+    color: black;
+    font-size: 14pt;
+}
+div.field-group {
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+div.field-group input {
+    margin: 0.2em;
+    flex: 1 9 auto;
+}
+div.field-group label{
+    overflow-wrap: none;
+    font-size: 15pt;
 }
